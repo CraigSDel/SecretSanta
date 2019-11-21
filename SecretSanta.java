@@ -7,7 +7,7 @@ public class SecretSanta{
         List<String> receiver = new ArrayList<>();
 
         while (buyer.size() != receiver.size()) {
-            double x = (Math.random() * ((buyer.size() - 0) + 1)) + 0;
+            double x = (Math.random() * ((buyer.size()) + 1));
             final int receiverIndex = Double.valueOf(x).intValue();
             if (receiverIndex < buyer.size()) {
                 final String receiverName = buyer.get(receiverIndex);
